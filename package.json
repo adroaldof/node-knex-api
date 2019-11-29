@@ -1,0 +1,17 @@
+{
+  "name": "api",
+  "version": "0.0.1",
+  "description": "Generic NodeJS API",
+  "main": "dist/index.js",
+  "author": "Adroaldo de Andrade <adroaldof@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node-dev --respawn src/index.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^8.5.4",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.7.2"
+  }
+}
