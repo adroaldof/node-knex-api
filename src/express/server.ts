@@ -1,12 +1,14 @@
 import express, { Request, Response } from 'express';
 import helmet from 'helmet';
 
+import { rateLimit } from './middlewares';
+
 const app = express();
 
 app.use(express.json({ limit: '10kb' }));
 app.use(helmet());
 
-app.get('/', (req: Request, res: Response) => {
+app.get('/', rateLimit, (req: Request, res: Response) => {
   const { connection, socket } = req;
   const ip = connection.remoteAddress || socket.remoteAddress;
 
