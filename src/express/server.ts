@@ -1,9 +1,9 @@
-import express, { Request, Response } from 'express';
+import express, { Application, Request, Response } from 'express';
 import helmet from 'helmet';
 
 import { rateLimit } from './middlewares';
 
-const app = express();
+const app: Application = express();
 
 app.use(express.json({ limit: '10kb' }));
 app.use(helmet());
