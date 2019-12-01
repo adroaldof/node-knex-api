@@ -14,6 +14,8 @@
     "souceType": "module"
   },
   "rules": {
-    "newline-before-return": 1
+    "newline-before-return": 1,
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": ["error", { "ignoreRestArgs": true }]
   }
 }
