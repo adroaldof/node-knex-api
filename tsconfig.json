@@ -7,7 +7,10 @@
     "noImplicitAny": false,
     "outDir": "dist",
     "rootDir": "src",
+    "sourceMap": true,
     "strict": true,
     "target": "es5"
-  }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.test.ts"]
 }
